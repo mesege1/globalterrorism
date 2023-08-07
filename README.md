@@ -1,6 +1,16 @@
 # Exploring the next caliphate: Prediction from the Global Terrorism Database
-# YJ 
-## Background
+![intro](https://github.com/mesege1/globalterrorism/assets/135185712/57199fc0-d63e-48c1-ac43-418663734636)
+
+(Global Terrorism Incidents between 2001 to 2017)
+# Table of Contents
+1. Overview
+2. Questions
+3. Cleaning
+4. Visualization
+5. What's a Purify???
+6. Return to Visualization
+7. Conclusion
+ 
 ![letter](https://github.com/mesege1/globalterrorism/assets/135185712/755f92e9-273d-4f77-82b2-5d6875371c90)
 
 
