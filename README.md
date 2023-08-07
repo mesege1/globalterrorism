@@ -8,7 +8,8 @@
 5. Statistical Test and Analysis
 6. Prediction
 7. Conclusion
-8. Solution proposal: Change conditions
+8. Future data chanllenge
+9. Proposed solution: Change conditions
 ## Overview
 ### What is Global War on Terror (GWOT)?
 The War on Terror, or Global War on Terrorism (GWOT), was a global counterterrorism military campaign initiated by the United States after the September 11 attacks, with no official endpoint declared.
@@ -73,14 +74,14 @@ The hypothesis determines whether the model is statistically significant and whe
 ### T-test between high incident and low incident groups on Education level
 ![ttest_edu_high_low](https://github.com/mesege1/globalterrorism/assets/135185712/d7e058cf-3746-441f-a5b6-ea52fd0dda41)
 - Result: Reject Null Hypothesis
-  
-![boxplot_education](https://github.com/mesege1/globalterrorism/assets/135185712/a1969ea5-92c6-4eeb-9015-4dafac881366)
+
+![boxplot_education](https://github.com/mesege1/globalterrorism/assets/135185712/17a72d13-6d5f-4f90-af7e-3ee276d44da1)
 - Observation: Low incident group has a higher median level (median incident: 23)
 ### T-test between high incident and low incident groups on GDP per capita
 ![ttest_gdp_high_low](https://github.com/mesege1/globalterrorism/assets/135185712/bc0d6e11-16a1-40b4-b3df-e244dc5010fe)
 - Result: Reject Null Hypothesis
-  
-![boxplot_gdp_high_low](https://github.com/mesege1/globalterrorism/assets/135185712/dedfb195-d458-4953-bcb6-308c14e6821b)
+
+![boxplot_gdp_high_low](https://github.com/mesege1/globalterrorism/assets/135185712/eda9ab58-79bd-41a8-8ae0-6621ccd20311)
 - Observation: The low incident group has a slightly higher median than the high incident group. The difference between the top quartile is more than $20,000.
 ### T-test summary
 - According to multiple hypothesis tests, the p-value is smaller than 0.05, which indicates the test rejects the null hypothesis. In other words, lack of education in developing countries significantly relates to participation in violent extremist activities.
@@ -102,11 +103,13 @@ The hypothesis determines whether the model is statistically significant and whe
 ![top 10 prediction](https://github.com/mesege1/globalterrorism/assets/135185712/656423b8-6756-4d05-95d7-4a9eaede5117)
 ## Conclusion
 There are multi-facets of social factors that contribute to violent extremism. This project reviewed terrorism activities during the GWOT era and found correlations between education level, GDP per capita, and terrorism incidents. Although we found a weak relationship between features (education level & GDP) and the target (incident count), we identified the patterns of two social factors and applied the model to future prediction.
-## Solution proposal: Change conditions
-If the current status does not change, it will create unexpected long-term effects that future generations must combat later. The focus must emphasize discovering whether unequal social status and lack of opportunities cause vulnerable children to join VEOs and, if so, how to mitigate them from being influenced by extremist groups. Lastly, further analyses must explore how to implement and improve the education system in unstable countries while preserving their cultural values and traditions. 
-1) Embed the Quality Education in the Military Cooperation
+## Future data chanllenge 
+- The current data exploration revealed the possibility of more significant social factors contributing to violent extremism. Without changes, the status quo repeats. Therefore, the focus must emphasize discovering whether unequal social status and lack of opportunities cause vulnerable children to join VEOs and, if so, how to mitigate them from being influenced by extremist groups. In addition, further analyses must explore how to implement and improve the education system in unstable countries while preserving their cultural values and traditions.
+- Future data exploration example; 1) "Not in Education, Employment, or Training" (NEET), 2) child labor index, or 3) any other children's risk index. Once we find the correlation, we can implement the support plan.
+## Proposed solutions: Change conditions
+### 1) Embed the Quality Education in the Military Cooperation
 - Multiple United States military service members are currently deployed to numerous countries to support counterterrorism operations. Many developing countries are combating contemporary VEO issues, such as Iraq, Libya, Somalia, Niger, and the Philippines, which have established cooperative military relationships with the United States and received structured training and logistical support. Providing them with a quality education would increase the level of individual education and extend the capacities and capabilities of the host nation, which satisfies the U.S. objectives. Most importantly, it reduces VEO influences in the regions by changing conditions and providing opportunities and motivations to serve the armed forces against terrorism. It also positively changes the public perception and increases support for the host nation's armed forces.
-2) Increase Awareness of the Effective Utilization of Technology
+### 2) Increase Awareness of the Effective Utilization of Technology
 - Providing education, especially for a specific group, is only a partial solution to a complex problem. Developing and unstable countries face more challenges regarding job opportunities due to a lack of resources. Utilizing technology could tighten the opportunity gaps in child education and job availability between developed and unstable countries and solve the global extremist problem, which the many IGOs, such as the U.N., emphasize as an objective for sustainable development.
-3) Develop Infrastructure for Fair Information Accessibility
+### 3) Develop Infrastructure for Fair Information Accessibility
 - The right to education is a fundamental human right assured by multiple international organizations and treaties. Article 26 of the Universal Declaration of Human Rights states, "Everyone has the right to education. Education shall be free, at least in the elementary and fundamental stages". However, according to UNESCO Institute for Statistics (UIS), about 258 million children are out of school, comprising one-sixth of this age group in 2018. Developing IT infrastructure and improving access to information would preserve children's education rights and substitute the shortage of physical schools and education institutes. In addition, social connectivity through the IT system enables charities and intergovernmental organizations to access people in need via network and to provide quality education without physical presence. 
