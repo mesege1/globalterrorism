@@ -9,7 +9,7 @@
 6. Prediction
 7. Conclusion
 8. Future data chanllenge
-9. Proposed solution: Change conditions, influence future generations
+9. Proposed solution: Change conditions to influence future generations
 ## Overview
 ### What is Global War on Terror (GWOT)?
 The War on Terror, or Global War on Terrorism (GWOT), was a global counterterrorism military campaign initiated by the United States after the September 11 attacks, with no official endpoint declared.
