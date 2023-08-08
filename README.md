@@ -95,12 +95,19 @@ The hypothesis determines whether the model is statistically significant and whe
 - The same goes for the GDP per capita and incident count relationship. It has a positive but weak relationship, which indicates less predictive power. The same goes for the GDP per capita and incident count relationship. It has a positive but weak relationship, which indicates less predictive power. With more features, it would build a better model. However, this project only deals with education level and GDP per capita. 
 # Prediction
 ### Top 5 countries per region
-![top5_per_region](https://github.com/mesege1/globalterrorism/assets/135185712/98e507e4-b987-4024-919d-dbb6eb2b65c3)
+![top5_per_region](https://github.com/mesege1/globalterrorism/assets/135185712/c913d1f9-676e-48b3-9830-367d6c17e3bb)
 - With the given regression model, we applied it to the Global Terrorism dataset. The graphs show the top 5 countries within the regions with low GDP and education levels.
 ### Countries with the highest predicted terrorism incident count in each region
 ![prediction](https://github.com/mesege1/globalterrorism/assets/135185712/0d6d3cb0-743a-4a0d-8aff-1fb8246077a7)
 ### Top 10 countries with the highest prediction (regardless of region)
 ![top 10 prediction](https://github.com/mesege1/globalterrorism/assets/135185712/656423b8-6756-4d05-95d7-4a9eaede5117)
+#### Cross validation (K-fold)
+- K-fold cross-validation is a valuable tool to assess the generalization performance of a model and gain confidence in its ability to perform well on new, unseen data.
+![kfold_results](https://github.com/mesege1/globalterrorism/assets/135185712/0f3c1a94-013a-482e-9c8a-409efa709928)
+#### Residual Analysis
+- Residual analysis helps identify outliers in the data. Outliers are data points that significantly deviate from the general trend. High residual values can indicate the presence of outliers, which may be influential in affecting the model's performance and predictions.
+![residual_analysis](https://github.com/mesege1/globalterrorism/assets/135185712/8f42f32d-11cb-4e8d-9da3-ec81f5c8bf2b)
+- The residual analysis shows this dataset has higher residual values, meaning many outliers. It may affect the model's performance and predictions.
 ## Conclusion
 There are multi-facets of social factors that contribute to violent extremism. This project reviewed terrorism activities during the GWOT era and found correlations between education level, GDP per capita, and terrorism incidents. Although we found a weak relationship between features (education level & GDP) and the target (incident count), we identified the patterns of two social factors and applied the model to future prediction.
 ## Future data chanllenge 
