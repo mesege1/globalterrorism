@@ -116,7 +116,7 @@ There are multi-facets of social factors that contribute to violent extremism. T
 - Future data exploration example; 1) "Not in Education, Employment, or Training" (NEET), 2) child labor index, or 3) any other children's risk index. Once we find the correlation, we can implement the support plan.
 ## Proposed solutions: Change conditions for long-term effect
 ![image](https://github.com/mesege1/globalterrorism/assets/135185712/271a7c23-7d1d-4bfe-9e8e-9371603e86af)
-(Children in Syrian Al-hol refugee camp, source: https://www.rudaw.net/english/opinion/12092022)
+(Children in Syrian Al-hol refugee camp, source: https://www.the-sun.com/news/2411749/al-hawl-children-isis-fighters-video-shamima-begum/)
 
 ### 1) Embed the Quality Education in the Military Cooperation
 - Multiple United States military service members are currently deployed to numerous countries to support counterterrorism operations. Many developing countries are combating contemporary VEO issues, such as Iraq, Libya, Somalia, Niger, and the Philippines, which have established cooperative military relationships with the United States and received structured training and logistical support. Providing them with a quality education would increase the level of individual education and extend the capacities and capabilities of the host nation, which satisfies the U.S. objectives. Most importantly, it reduces VEO influences in the regions by changing conditions and providing opportunities and motivations to serve the armed forces against terrorism. It also positively changes the public perception and increases support for the host nation's armed forces.
