@@ -107,7 +107,7 @@ The hypothesis determines whether the model is statistically significant and whe
 #### Residual Analysis
 - Residual analysis helps identify outliers in the data. Outliers are data points that significantly deviate from the general trend. High residual values can indicate the presence of outliers, which may be influential in affecting the model's performance and predictions.
 ![residual_analysis](https://github.com/mesege1/globalterrorism/assets/135185712/8f42f32d-11cb-4e8d-9da3-ec81f5c8bf2b)
-- The residual analysis shows this dataset has higher residual values, meaning many outliers. It may affect the model's performance and predictions.
+- The residual analysis shows this dataset has higher residual values with many outliers. It may affect the model's performance and predictions.
 ## Conclusion
 There are multi-facets of social factors that contribute to violent extremism. This project reviewed terrorism activities during the GWOT era and found correlations between education level, GDP per capita, and terrorism incidents. Although we found a weak relationship between features (education level & GDP) and the target (incident count), we identified the patterns of two social factors and applied the model to future prediction.
 ## Future data chanllenge 
