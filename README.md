@@ -88,10 +88,10 @@ The hypothesis determines whether the model is statistically significant and whe
 ### Step 3. Linear regression model
 - Based on this t-test result, we built two linear regression models (Education and GDP per capita).
 ##### Linear regression line on Education level
-![linear_regression_with_scatter_plot](https://github.com/mesege1/globalterrorism/assets/135185712/2fafab05-25c7-40e1-85e8-8a8b4d5bfe63)
+![linear_regression_with_scatter_plot](https://github.com/mesege1/globalterrorism/assets/135185712/bc41b827-8299-41de-b0b5-dc65873cfa73)
 - When the regression line is low, the line has a low Y-intercept, and the slope is relatively shallow. In practical terms, this means that for a given increase in the independent variable (X), the dependent variable (Y) increases only slightly. In other words, the variables have a positive correlation, but the relationship is not very strong.
 ##### Linear regression line on GDP per capita
-![linear_regression_gdp_incident](https://github.com/mesege1/globalterrorism/assets/135185712/b42ca971-2fdd-483a-b960-efe6592477e6)
+![linear_regression_gdp_incident](https://github.com/mesege1/globalterrorism/assets/135185712/3fe3d0bf-c010-4af5-ba42-662cece483b9)
 - The same goes for the GDP per capita and incident count relationship. It has a positive but weak relationship, which indicates less predictive power. The same goes for the GDP per capita and incident count relationship. It has a positive but weak relationship, which indicates less predictive power. With more features, it would build a better model. However, this project only deals with education level and GDP per capita. 
 # Prediction
 ### Top 5 countries per region
