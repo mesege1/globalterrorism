@@ -103,6 +103,7 @@ The hypothesis determines whether the model is statistically significant and whe
 ![top 10 prediction](https://github.com/mesege1/globalterrorism/assets/135185712/656423b8-6756-4d05-95d7-4a9eaede5117)
 #### Cross validation (K-fold)
 - K-fold cross-validation is a valuable tool to assess the generalization performance of a model and gain confidence in its ability to perform well on new, unseen data.
+
 ![kfold_results](https://github.com/mesege1/globalterrorism/assets/135185712/0f3c1a94-013a-482e-9c8a-409efa709928)
 #### Residual Analysis
 - Residual analysis helps identify outliers in the data. Outliers are data points that significantly deviate from the general trend. High residual values can indicate the presence of outliers, which may be influential in affecting the model's performance and predictions.
