@@ -118,9 +118,9 @@ The hypothesis determines whether the model is statistically significant and whe
 ### Top 10 countries with the highest prediction (regardless of region)
 ![top 10 prediction](https://github.com/mesege1/globalterrorism/assets/135185712/656423b8-6756-4d05-95d7-4a9eaede5117)
 - The result shows that Sub-Saharan African countries are most susceptible to future terrorism incidents.
-# Disclaimer!
-I must reiterate that many other social factors could lead to violent extremism. These are results based on the assumption that education level and GDP per capita strongly correlate to terrorism incidents. 
-We found that education level and GDP per capita have a positive but weak correlation. So the graph shouldn't be viewed as an absolute projection. 
+# Important note!
+Many other social factors could lead to violent extremism. These predictions are based on the 'presumption' that education level and GDP per capita strongly correlate to terrorism incidents. 
+However, we found that education level and GDP per capita have a positive but 'weak' correlation. Therefore, the graph shouldn't be viewed as an absolute projection. 
 
 #### Cross validation (K-fold)
 - K-fold cross-validation is a valuable tool to assess the generalization performance of a model and gain confidence in its ability to perform well on new, unseen data.
@@ -131,7 +131,7 @@ We found that education level and GDP per capita have a positive but weak correl
 ![residual_analysis](https://github.com/mesege1/globalterrorism/assets/135185712/8f42f32d-11cb-4e8d-9da3-ec81f5c8bf2b)
 - The residual analysis shows this dataset has higher residual values with many outliers. It may affect the model's performance and predictions.
 ## Conclusion
-There are multi-facets of social factors that contribute to violent extremism. This project reviewed terrorism activities during the GWOT era and found correlations between education level, GDP per capita, and terrorism incidents. Although we found a weak relationship between features (education level & GDP) and the target (incident count), we identified the patterns of two social factors and applied the model to future prediction.
+There are multi-facets of social factors that contribute to violent extremism. This project reviewed terrorism activities during the GWOT era and found correlations between education level, GDP per capita, and terrorism incidents. Although we found a weak relationship between features (education level & GDP) and the target (incident count), we identified that education level is more significant in terrorism incidents. However, this prediction inevitably requires additional social variables for the optimized prediction. With these results, I will continue to discover other features that contribute to participation in terrorism.
 ## Future data chanllenge 
 - The current data exploration revealed the possibility of more significant social factors contributing to violent extremism. Without changes, the status quo repeats. Therefore, the focus must emphasize discovering whether unequal social status and lack of opportunities cause vulnerable children to join VEOs and, if so, how to mitigate them from being influenced by extremist groups. In addition, further analyses must explore how to implement and improve the education system in unstable countries while preserving their cultural values and traditions.
 - Future data exploration example; 1) "Not in Education, Employment, or Training" (NEET), 2) child labor index, or 3) any other children's risk index. Once we find the correlation, we can implement the support plan.
