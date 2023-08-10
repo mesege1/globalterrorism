@@ -1,15 +1,15 @@
 # Exploring the Next Caliphate: A Prediction from the Global Terrorism Database
 ![START_GTD-Heatmap_2020](https://github.com/mesege1/globalterrorism/assets/135185712/eacb5468-9ef4-44f4-9ae1-ac7803c6571b)
 # Table of Contents
-1. Overview
-2. Questions
-3. About the data
-4. Visualization
-5. Statistical Test and Analysis
-6. Prediction
-7. Conclusion
-8. Future data chanllenge
-9. Proposed solution: Change conditions to influence future generations
+1. [Overview](#overview)
+2. [Questions](#questions)
+3. [About the data](#about-the-data)
+4. [Visualization](#visualization)
+5. [Statistical Test and Analysis](#statistical-test-and-analysis)
+6. [Prediction](#prediction)
+7. [Conclusion](#conclusion)
+8. [Future data chanllenge](#future-data-chanllenge)
+9. [Proposed solution: Change conditions to influence future generations](#proposed-solutions-change-conditions-for-long-term-effect)
 ## Overview
 ### What is Global War on Terror (GWOT)?
 The War on Terror, or Global War on Terrorism (GWOT), was a global counterterrorism military campaign initiated by the United States after the September 11 attacks, with no official endpoint declared.
@@ -118,7 +118,8 @@ The hypothesis determines whether the model is statistically significant and whe
 ### Top 10 countries with the highest prediction (regardless of region)
 ![top 10 prediction](https://github.com/mesege1/globalterrorism/assets/135185712/656423b8-6756-4d05-95d7-4a9eaede5117)
 - The result shows that Sub-Saharan African countries are most susceptible to future terrorism incidents.
-# Important note!
+# <span style="color: red; font-size: 28px;">Important Note!</span>
+
 Many other social factors could lead to violent extremism. These predictions are based on the 'presumption' that education level and GDP per capita strongly correlate to terrorism incidents. 
 However, we found that education level and GDP per capita have a positive but 'weak' correlation. Therefore, the graph shouldn't be viewed as an absolute projection. 
 
@@ -128,6 +129,7 @@ However, we found that education level and GDP per capita have a positive but 'w
 ![kfold_results](https://github.com/mesege1/globalterrorism/assets/135185712/0f3c1a94-013a-482e-9c8a-409efa709928)
 #### Residual Analysis
 - Residual analysis helps identify outliers in the data. Outliers are data points that significantly deviate from the general trend. High residual values can indicate the presence of outliers, which may be influential in affecting the model's performance and predictions.
+
 ![residual_analysis](https://github.com/mesege1/globalterrorism/assets/135185712/8f42f32d-11cb-4e8d-9da3-ec81f5c8bf2b)
 - The residual analysis shows this dataset has higher residual values with many outliers. It may affect the model's performance and predictions.
 ## Conclusion
