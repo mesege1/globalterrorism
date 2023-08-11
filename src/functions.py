@@ -178,10 +178,6 @@ def plot_regression_simplified(data, x_column, y_column):
     plt.show()
 
 def perform_ttest_and_visualize(data1, data2, alpha=0.025, num_bootstrap_samples=1000):
-    # Normalize the data
-    data1_normalized = (data1 - np.mean(data1)) / np.std(data1)
-    data2_normalized = (data2 - np.mean(data2)) / np.std(data2)
-    
     # Bootstrap samples function
     def bootstrap_samples(x, num_bootstrap_samples):
         bootstrap_samples = []
@@ -190,8 +186,8 @@ def perform_ttest_and_visualize(data1, data2, alpha=0.025, num_bootstrap_samples
         return bootstrap_samples
     
     # Apply bootstrap samples function
-    data1_bootstrap = bootstrap_samples(data1_normalized, num_bootstrap_samples)
-    data2_bootstrap = bootstrap_samples(data2_normalized, num_bootstrap_samples)
+    data1_bootstrap = bootstrap_samples(data1, num_bootstrap_samples)
+    data2_bootstrap = bootstrap_samples(data2, num_bootstrap_samples)
     
     # Create distributions using bootstrap samples
     data1_distribution = norm(loc=np.mean(data1_bootstrap), scale=np.std(data1_bootstrap, ddof=1))
@@ -199,7 +195,7 @@ def perform_ttest_and_visualize(data1, data2, alpha=0.025, num_bootstrap_samples
     
     # Calculate critical values
     critical_value_data1 = data1_distribution.ppf(alpha)
-    critical_value_data2 = data2_distribution.ppf(1 - alpha)
+    critical_value_data2 = data1_distribution.ppf(1 - alpha)
     
     # Perform t-test
     t_stat, p_value_ttest = ttest_ind(data1, data2)
@@ -272,27 +268,28 @@ def create_bar_chart(dataframe):
 
 
 if __name__ == "__main__":
+    # Variables required for the following functions.
+    gdp_cleaned = final_data['education_level']    
+    variables_to_plot = ['GDP per capita', 'education_level', 'incident_count']   
+    sub_sahara_education_data = final_data[final_data['region_txt'] == 'Sub-Saharan Africa']['education_level']
+    north_america_education_data = final_data[final_data['region_txt'] == 'North America']['education_level']
+    education_level = final_data['education_level']
+    
+    # Functions start below. 
+    
     #generate_total_incidents_by_year_chart(final_data)
     #plot_incidents_by_country(final_data)
     #plot_heatmap(final_data)
     #plot_lowest_average_gdp(final_data)
     #plot_lowest_average_education(final_data)
     #plot_education_heatmap(final_data)
-    
-    gdp_cleaned = final_data['education_level']
     #plot_distribution(gdp_cleaned, 'education_level', 'red')
-    # These three variables will be used for this project. You can replace it with variables of interest.
-    variables_to_plot = ['GDP per capita', 'education_level', 'incident_count']
     #plot_pairplot(final_data, variables_to_plot)
     #plot_scatterplot(final_data, 'education_level', 'incident_count', 'region_txt', 'Scatter Plot: Education Level vs. Incident Count by Region')
     #plot_correlation_heatmap(final_data, variables_to_plot)
     #perform_multiple_linear_regression(final_data)
     #plot_regression_simplified(final_data, 'education_level', 'incident_count')
-    # For t-test, I'm bootstrapping Sub-saharan African and North America data. As you can see in the below lines, you can replace the region data by plugging it.
-    sub_sahara_education_data = final_data[final_data['region_txt'] == 'Sub-Saharan Africa']['education_level']
-    north_america_education_data = final_data[final_data['region_txt'] == 'North America']['education_level']
-    #perform_ttest_and_visualize(sub_sahara_education_data, north_america_education_data)
-    education_level = final_data['education_level']
+    perform_ttest_and_visualize(sub_sahara_education_data, north_america_education_data)
     #plot_qq_plot(education_level, 'Education Level')
     new_final = create_new_final_dataframe(final_data)
     print(new_final)
