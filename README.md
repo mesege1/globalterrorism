@@ -79,13 +79,13 @@ The hypothesis determines whether the model is statistically significant and whe
 - Result: Reject Null Hypothesis
 - What does this mean? Lack of education in developing countries significantly relates to participation in violent extremist activities.
 - Both two sample t-test of Education Level and GDP per capita rejected the null hypothesis.
-### T-test between high incident and low incident groups on Education level
-![ttest_edu_high_low](https://github.com/mesege1/globalterrorism/assets/135185712/0ea46228-417f-474d-a7c9-360a4d4b7339)
+### T-test between high incident and low incident groups on Education level (with bootstrap)
+![ttest_edu_bootstrap](https://github.com/mesege1/globalterrorism/assets/135185712/9d6b1f5e-4bbb-4ffb-97bb-ce809a1376fe)
 - Result: Reject the Null Hypothesis. In other words, there is a relationship between education level and terrorism incidents.
 #### With the high and low incident groups data, we will visualize it with boxplots
 ![boxplot_education](https://github.com/mesege1/globalterrorism/assets/135185712/17a72d13-6d5f-4f90-af7e-3ee276d44da1)
 - Observation: Low incident group has a higher median level (median incident: 23)
-### T-test between high incident and low incident groups on GDP per capita
+### T-test between high incident and low incident groups on GDP per capita (with bootstrap)
 ![ttest_gdp_bootstrap](https://github.com/mesege1/globalterrorism/assets/135185712/abdb985b-9349-4c76-a0b7-3c33e866fe28)
 - Result: Again, it rejected the null Hypothesis. Meaning, there is also a relationship between GDP per capita and terrorism incident counts.
 #### Visualization with boxplots
@@ -97,9 +97,9 @@ The hypothesis determines whether the model is statistically significant and whe
 - Based on this t-test result, we built two linear regression models (Education and GDP per capita).
 #### Ordinary Least Squares (OLS) regression results
 ![OLS_result](https://github.com/mesege1/globalterrorism/assets/135185712/03fc7d3b-ee4c-40c7-96ee-6d185a2534b5)
-- Regression result explanation:
-- Education level = statistically significant but weak influence on terrorism incidents
-- GDP per capita = ‘not’ statistically significant
+##### Regression result explanation:
+- Education level = statistically significant but weak influence on terrorism incidents (P-value: 0.07)
+- GDP per capita = ‘not’ statistically significant (0.233)
 - Additional variables would explain the ‘incident’ better
 #### Overall regression results show that education level has more significance than GDP per capita. With combined, it still has some level of significance. But we need more features for better modeling. 
 
@@ -123,6 +123,7 @@ The hypothesis determines whether the model is statistically significant and whe
 Many other social factors could lead to violent extremism. These predictions are based on the 'presumption' that education level and GDP per capita strongly correlate to terrorism incidents. 
 However, we found that education level and GDP per capita have a positive but 'weak' correlation. Therefore, the graph shouldn't be viewed as an absolute projection. 
 
+## Validation method used for prediction model
 #### Cross validation (K-fold)
 - K-fold cross-validation is a valuable tool to assess the generalization performance of a model and gain confidence in its ability to perform well on new, unseen data.
 
