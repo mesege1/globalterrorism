@@ -70,23 +70,23 @@ The hypothesis determines whether the model is statistically significant and whe
 - If the p-value is more significant than 0.05, it fails to reject the null hypothesis. In other words, there is insufficient evidence to conclude that the sample mean significantly differs from the hypothesized population mean.
 ### Education Level T-test
 #### Two sample t-test between Sub-Saharan Africa and North America on Education level (applied the bootstrap method)
-![ttest_bootstrap_sahara_north_america_edu](https://github.com/mesege1/globalterrorism/assets/135185712/a12bd482-640f-4efd-9e51-86a6add0c872)
+![ttest_bootstrap_sahara_north_america_edu](https://github.com/mesege1/globalterrorism/assets/135185712/d02ba04f-127b-4cb1-8a53-dca58d8c9ed2)
 - We are comparing two regions with the lowest and the highest education. For this test, Sub-Saharan Africa acts as a 'control group.'
 - Result: Reject Null Hypothesis
 - What does this mean? Lack of education in developing countries significantly relates to participation in violent extremist activities.
 #### Two sample t-test between Sub-Saharan Africa and Western Europe on GDP (again, applied the bootstrap method)
-![ttest_bootstrap_sahara_western_europe_gdp](https://github.com/mesege1/globalterrorism/assets/135185712/6e157a26-31be-4be3-b71b-29549ad4f0d4)
+![ttest_bootstrap_sahara_western_europe_gdp](https://github.com/mesege1/globalterrorism/assets/135185712/4248df2b-629e-4b1d-94ca-a3127b04d21d)
 - Result: Reject Null Hypothesis
 - What does this mean? Lack of education in developing countries significantly relates to participation in violent extremist activities.
 - Both two sample t-test of Education Level and GDP per capita rejected the null hypothesis.
 ### T-test between high incident and low incident groups on Education level
-![ttest_edu_bootstrap](https://github.com/mesege1/globalterrorism/assets/135185712/7288bbb0-32b3-400c-8b48-d26164de3c9f)
+![ttest_edu_high_low](https://github.com/mesege1/globalterrorism/assets/135185712/0ea46228-417f-474d-a7c9-360a4d4b7339)
 - Result: Reject the Null Hypothesis. In other words, there is a relationship between education level and terrorism incidents.
 #### With the high and low incident groups data, we will visualize it with boxplots
 ![boxplot_education](https://github.com/mesege1/globalterrorism/assets/135185712/17a72d13-6d5f-4f90-af7e-3ee276d44da1)
 - Observation: Low incident group has a higher median level (median incident: 23)
 ### T-test between high incident and low incident groups on GDP per capita
-![ttest_gdp_bootstrap](https://github.com/mesege1/globalterrorism/assets/135185712/f5a1b9a6-844a-45f3-b969-f60c92a9f463)
+![ttest_gdp_bootstrap](https://github.com/mesege1/globalterrorism/assets/135185712/abdb985b-9349-4c76-a0b7-3c33e866fe28)
 - Result: Again, it rejected the null Hypothesis. Meaning, there is also a relationship between GDP per capita and terrorism incident counts.
 #### Visualization with boxplots
 ![boxplot_gdp_high_low](https://github.com/mesege1/globalterrorism/assets/135185712/eda9ab58-79bd-41a8-8ae0-6621ccd20311)
